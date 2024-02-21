@@ -5,13 +5,10 @@ int binaryRecursiveSearch(int arr[], int n, int low, int high, int target) {
 
     if (high >= low) {
         int mid = low + (high - low) / 2;
-
         if (arr[mid] == target)
             return mid;
-
         if (arr[mid] > target)
             return binaryRecursiveSearch(arr, n, low, mid - 1, target);
-
         return binaryRecursiveSearch(arr, n, mid + 1, high, target);
     }
     return -1;
