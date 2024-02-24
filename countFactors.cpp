@@ -6,10 +6,12 @@ int countFactors(int num) {
 
     for (int i = 1; i <= sqrt(num); ++i) {
         if (num % i == 0) {
+            // If both 'i' and 'num/i' are the same, count only once
             if (i == (num / i)) {
                 count++;
             }
-            else {
+            else { 
+                // Otherwise, count both
                 count += 2;
             }
         }
