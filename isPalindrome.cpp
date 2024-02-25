@@ -17,9 +17,9 @@ int main() {
 
     int n = 121;
     if(isPalindrome(n))
-        cout<<"Palindrom";
+        cout<<"Palindrome";
     else
-        cout<<"Not Palindrom";
+        cout<<"Not Palindrome";
 
     return 0;
 
