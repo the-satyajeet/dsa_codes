@@ -10,7 +10,7 @@ int main() {
     cout<<"p1.first: "<<p1.first<<" | p1.second.first: "<<p1.second.first<<" | p1.second.second: "<<p1.second.second<<endl;
 
     pair<int, int> arr[] = {{1, 3}, {2, 4}, {5, 7}, {6, 8}};
-    cout<<"arr[2].second: "<<arr[2].second; // Thala7
+    cout<<"arr[2].second: "<<arr[2].second<<endl; // Thala7
 
     return 0;
 }

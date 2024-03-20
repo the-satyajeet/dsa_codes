@@ -21,7 +21,6 @@ void quickSort(int A[], int l, int h) {
         quickSort(A, l, j);
         quickSort(A, j+1, h);
     }
-
 }
 
 int main() {

@@ -3,36 +3,47 @@
 #include <climits>
 using namespace std;
 
-class MinStack {
+class MinStack
+{
 private:
     vector<int> data;
     vector<int> mins;
+
 public:
-    void push(int x) {
+    void push(int x)
+    {
         data.push_back(x);
-        if (mins.empty() || x <= mins.back()) {
+        if (mins.empty() || x <= mins.back())
+        {
             mins.push_back(x);
         }
     }
-    void pop() {
-        if (data.empty()) {
+    void pop()
+    {
+        if (data.empty())
+        {
             cout << "Stack is empty" << endl;
             return;
         }
-        if (data.back() == mins.back()) {
+        if (data.back() == mins.back())
+        {
             mins.pop_back();
         }
         data.pop_back();
     }
-    int top() {
-        if (data.empty()) {
+    int top()
+    {
+        if (data.empty())
+        {
             cout << "Stack is empty" << endl;
             return -1; // or throw an exception
         }
         return data.back();
     }
-    int getMin() {
-        if (mins.empty()) {
+    int getMin()
+    {
+        if (mins.empty())
+        {
             cout << "Stack is empty" << endl;
             return -1; // or throw an exception
         }
@@ -40,7 +51,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     MinStack stack;
     stack.push(3);
     stack.push(5);

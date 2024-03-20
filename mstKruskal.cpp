@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 class DisjointSet {
     vector<int> rank, parent, size;
 public:
@@ -51,6 +50,7 @@ public:
         }
     }
 };
+
 class Solution
 {
 public:
@@ -69,7 +69,6 @@ public:
                 int adjNode = it[0];
                 int wt = it[1];
                 int node = i;
-
                 edges.push_back({wt, {node, adjNode}});
             }
         }

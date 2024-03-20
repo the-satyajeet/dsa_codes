@@ -10,7 +10,7 @@ int countFactors(int num) {
             if (i == (num / i)) {
                 count++;
             }
-            else { 
+            else {
                 // Otherwise, count both
                 count += 2;
             }
