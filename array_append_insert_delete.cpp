@@ -7,12 +7,6 @@ struct Array {
     int length;
 };
 
-// append
-void Append(struct Array *arr, int val) {
-    if (arr->length < arr->size)
-        arr->A[arr->length++] = val;
-}
-
 // insert
 void Insert(struct Array *arr, int val, int index)  {
     if(index < arr-> length && index >= 0)

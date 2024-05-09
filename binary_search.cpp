@@ -17,18 +17,20 @@ int binarySearch(int arr[], int n, int target) {
 }
 
 int main() {
-    int arr[] = {12, 23, 38, 49, 53, 61, 72, 92};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cin>>n;
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        cin>>arr[i];
+    }
     int target;
-
-    cout<<"Enter number to search in array: ";
     cin>>target;
 
     int res = binarySearch(arr, n, target);
     if(res == -1)
-        cout<<"Not found";
+        cout<<"Bus No. Not found";
     else
-        cout<<"Found at "<<res;
+        cout<<"Bus No. Fount at index "<<res;
 
     return 0;
 }
